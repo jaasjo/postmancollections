@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "ee0bbf65-153e-4e1b-8d87-df2aceab0df9",
+		"name": "vRSLCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vRSLCM Request Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-xenon-auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ4biIsInN1YiI6Ii9jb3JlL2F1dGh6L3VzZXJzL3ZMQ01BZG1pbiIsImV4cCI6NDcwMjk5ODczMH0.U-NZ_FFoQahOZ2NNFXbxuUF5rpmJOil5R93eRz_XhwQ"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://vRSLCM_FQDN/lcm/api/v1/request/status/e4159335da3f3875580a9da01e962",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"11",
+						"20"
+					],
+					"path": [
+						"lcm",
+						"api",
+						"v1",
+						"request",
+						"status",
+						"e4159335da3f3875580a9da01e962"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vRSLCM Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\": \"admin@localhost\",\n\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "https://vRSLCM_FQDN/lcm/api/v1/login",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"11",
+						"20"
+					],
+					"path": [
+						"lcm",
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vRSLCM Delete Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-xenon-auth-token",
+						"value": "ayJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ4biIsInN1YiI6Ii9jb3JlL2F1dGh6L3VzZXJzL3ZMQ01BZG1pbiIsImV4cCI6NDcwMjk5ODczMH0.U-NZ_FFoQahOZ2NNFXbxuUF5rpmJOil5R93eRz_XhwQ"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://vRSLCM_FQDN/lcm/api/request/e4159335da3f3875580a9da01e962",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"11",
+						"20"
+					],
+					"path": [
+						"lcm",
+						"api",
+						"request",
+						"e4159335da3f3875580a9da01e962"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
